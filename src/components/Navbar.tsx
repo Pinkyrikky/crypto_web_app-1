@@ -3,7 +3,7 @@ import MegaMenu, { IMega } from "./Mega_Menu";
 import { DarkModeSwitch } from "./toggle";
 import React from "react";
 
-export interface Imenu{
+interface Imenu{
     name: string;
     megaMenu: IMega | null;
     hasMegaMenu: boolean
@@ -478,7 +478,7 @@ export default function Navbar(){
 }
 
 
-const ToggleIcon = ()=> {
+export const ToggleIcon = ()=> {
     return (
         <svg
             xmlnsXlink="http://www.w3.org/1999/xlink"
